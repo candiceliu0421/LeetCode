@@ -19,7 +19,7 @@ class Solution(object):
         while se_n != 1:
             sq_sum = 0
             while se_n > 0:
-                sq_sum += (se_n % 10) * (se_n % 10)
+                sq_sum = sq_sum + (se_n % 10) * (se_n % 10)
                 se_n = se_n / 10
             if sq_sum in record:
                 return False
